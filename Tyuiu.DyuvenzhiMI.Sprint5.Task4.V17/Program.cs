@@ -35,7 +35,7 @@ internal class Program
         double res = ds.LoadFromDataFile(path);
 
         Console.WriteLine("ОТвет = " + res);
-        Console.ReadLine();
+        Console.ReadLine(); 
 
     }
 }
