@@ -16,20 +16,21 @@ namespace Tyuiu.DyuvenzhiMI.Sprint5.Task5.V27.Lib
 
             int count = 0;
             int sum = 0;
-
+            //int count1 = 0;
+            //int sum1 = 0;
 
             foreach (string s in stringNumbers)
             {
                 if (int.TryParse(s, out int number))
                 {
-                    if (number % 5 == 0)
+                    if ((Math.Abs(number) % 5 == 0))
                     {
                         count++;
                         sum += number;
                     }
                 }
             }
-            res = sum / count;
+            res = (sum / count)+0.5; 
 
             /*using (StreamReader reader = new StreamReader(path))
             {
