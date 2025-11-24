@@ -42,7 +42,7 @@ internal class Program
             {
                 Console.Write($"{mrtx[i, j]} \t");
             }
-            Console.WriteLine();
+            Console.WriteLine(); 
         }
         Console.WriteLine();
         Console.WriteLine("***************************************************************************");

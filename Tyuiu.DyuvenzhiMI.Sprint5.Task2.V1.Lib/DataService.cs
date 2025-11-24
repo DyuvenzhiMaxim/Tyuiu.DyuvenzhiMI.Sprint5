@@ -42,7 +42,7 @@ namespace Tyuiu.DyuvenzhiMI.Sprint5.Task2.V1.Lib
                 {
                     if (j != columns - 1)
                     {
-                        str += matrix[i, j] + ';';
+                        str = str + $"{matrix[i, j]};";
                     }
                     else
                     {
@@ -54,7 +54,7 @@ namespace Tyuiu.DyuvenzhiMI.Sprint5.Task2.V1.Lib
                 {
                     File.AppendAllText(path, str + Environment.NewLine);
                 }
-                else
+                else 
                 {
                     File.AppendAllText(path, str);
                 }
