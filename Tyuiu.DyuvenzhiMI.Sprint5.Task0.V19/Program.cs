@@ -33,6 +33,6 @@ internal class Program
 
         Console.WriteLine("файл " + res);
         Console.WriteLine("Создан!");
-        Console.ReadLine();
+        Console.ReadLine(); 
     }
 }

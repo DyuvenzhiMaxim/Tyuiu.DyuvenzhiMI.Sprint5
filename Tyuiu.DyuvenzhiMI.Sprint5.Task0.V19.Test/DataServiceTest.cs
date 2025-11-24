@@ -9,8 +9,10 @@ namespace Tyuiu.DyuvenzhiMI.Sprint5.Task0.V19.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"D:\programming\repos\Tyuiu.DyuvenzhiMI.Sprint5\Tyuiu.DyuvenzhiMI.Sprint5.Task0.V19\bin\Debug\net8.0\OutPutFileTask0.txt";
-            //string path = $@"{Path.GetTempFileName()}\OutPutFileTask0.txt";
+            string path1 = Path.GetTempPath();
+            string fileName = "OutPutFileTask0.txt";
+            string path = Path.Combine(path1, fileName);
+
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
